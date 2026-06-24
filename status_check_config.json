@@ -1,0 +1,52 @@
+{
+  "organization_url": "https://dev.azure.com/org",
+  "project_name": "",
+  "pat": "",
+  "branch_name": "refs/heads/main",
+  "projects": [
+    "JakobDemo"
+  ],
+  "repositories": [
+    "*"
+  ],
+  "branch_policies": [
+    {
+      "displayName": "Minimum number of reviewers",
+      "type": {
+        "id": "fa4e907d-c16b-4a4c-9dfa-4906e5d171dd"
+      },
+      "isEnabled": true,
+      "isBlocking": true,
+      "isDeleted": false,
+      "settings": {
+        "minimumApproverCount": 2,
+        "creatorVoteCounts": true,
+        "allowDownvotes": false,
+        "resetOnSourcePush": false,
+        "requireVoteOnLastIteration": false,
+        "resetRejectionsOnSourcePush": false,
+        "blockLastPusherVote": false,
+        "requireVoteOnEachIteration": false
+      }
+    },
+    {
+      "isEnabled": true,
+      "isBlocking": true,
+      "type": {
+        "id": "83a38da0-aa7e-466c-b72c-da613b054247"
+      },
+      "settings": {
+        "name": "sonar-check",
+        "invalidateOnUpdate": true,
+        "applicability": "conditional",
+        "scope": [
+          {
+            "refName": "refs/heads/main",
+            "repositoryId": "ba9d035c-29d3-496f-9be0-8ec6393bb2ed",
+            "matchKind": "Exact"
+          }
+        ]
+      }
+    }
+  ]
+}
