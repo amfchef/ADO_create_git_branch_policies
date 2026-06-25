@@ -38,14 +38,7 @@
       "settings": {
         "name": "sonar-check",
         "invalidateOnUpdate": true,
-        "applicability": "conditional",
-        "scope": [
-          {
-            "refName": "refs/heads/main",
-            "repositoryId": "ba9d035c-29d3-496f-9be0-8ec6393bb2ed",
-            "matchKind": "Exact"
-          }
-        ]
+        "applicability": "conditional"
       }
     }
   ]
